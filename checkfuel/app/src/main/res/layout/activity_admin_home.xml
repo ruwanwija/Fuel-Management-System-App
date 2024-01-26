@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AdminHome"
+android:background="@drawable/filling_home">
+
+<TextView
+    android:id="@+id/user_list"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="200dp"
+    android:layout_marginEnd="32dp"
+    android:background="@drawable/background_tile"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:text="User List"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/station_list"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:background="@drawable/background_tile"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:text="Station List"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+    app:layout_constraintEnd_toEndOf="@+id/user_list"
+    app:layout_constraintStart_toStartOf="@+id/user_list"
+    app:layout_constraintTop_toBottomOf="@+id/user_list" />
+
+    <TextView
+        android:id="@+id/station_map"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background_tile"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Station Map"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="@+id/station_list"
+        app:layout_constraintStart_toStartOf="@+id/station_list"
+        app:layout_constraintTop_toBottomOf="@+id/station_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillingDetailsEdit"
+    android:background="@drawable/upadate_fuel">
+
+
+    <TextView
+        android:id="@+id/fuel_add_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="350dp"
+        android:background="@drawable/background_tile"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/availability"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/availability"
+        app:layout_constraintTop_toBottomOf="@+id/availability"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Spinner
+        android:id="@+id/Fs_Fd_Name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+        android:ems="10"
+        android:hint="  Enter Fuel Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/availability"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+        android:ems="10"
+        android:hint="  Enter Fuel Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Fs_Fd_Price"
+        app:layout_constraintStart_toStartOf="@+id/Fs_Fd_Price"
+        app:layout_constraintTop_toBottomOf="@+id/Fs_Fd_Price" />
+
+    <EditText
+        android:id="@+id/Fs_Fd_Price"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_price_change_24"
+        android:ems="10"
+        android:hint="    Enter Fuel Price(per liter)"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Fs_Fd_Name"
+        app:layout_constraintStart_toStartOf="@+id/Fs_Fd_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Fs_Fd_Name" />
+
+    <ImageView
+        android:id="@+id/fuel_update_back"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <ImageView
+        android:id="@+id/fuel_update_home"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
